@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clayton Waldock</title>
+    <link rel="stylesheet" href="profile/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+    <script>
+    $(function() {
+  // set `$.fx.interval` at `0`
+  $.fx.interval = 0;
+  (function cycleBgImage(elem, bgimg) {
+// `elem`:`#slideshow`
+// set, reset, delay to `1000` after background image reset
+elem.css("backgroundImage", bgimg)
+  // fade in background image
+  .fadeTo(3000, 1, "linear", function() {
+    // set `delay` before fadeing out image
+    // fade in background image
+    $(this).delay(3000, "fx").fadeTo(3000, 0, "linear", function() {
+      // split background image string at comma , creating array
+      var img = $(this).css("backgroundImage").split(","),
+        // concat first background image to `img` array,
+        // remove first background image from `img` array
+        bgimg = img.concat(img[0]).splice(1).join(",");
+      // recursively call `cycleBgImage`
+      cycleBgImage(elem, bgimg);
+    });
+  });
+  }($("#slideshow")));
+});
+</script>
+  </head>
+  <body>
+    <section class="page-1">
+      <section id="info">
+        <div class="info-text">
+         <h1>Clayton Waldock</h1>
+         <p>Student Full Stack Developer</p>
+         <p>Knowledge In Ruby, html and css</p>
+         <p>Lorem ipsum dolor</p>
+         <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="info-social">
+          <a id="info-social" href="https://github.com/CTWaldock" class="fab fa-github-alt" target="_blank"></a>
+          <a id="info-social" href="https://twitter.com/c_waldock" class="fab fa-twitter" target="_blank"></a>
+          <a id="info-social" href="https://www.facebook.com/profile.php?id=100008495649800" class="fab fa-facebook-f" target="_blank"></a>
+          <a id="info-social" href="https://www.linkedin.com/in/clayton-waldock-09641115a/" class="fab fa-linkedin-in" target="_blank"></a>
+        </div>
+      </section>
+
+      <section id="logo-page">
+        <img src="profile-art/brick.png" alt="My logo">
+        <h1>Building Websites Better</h1>
+      </section>
+
+      <section id="about-me">
+        <h1>About Me</h1>
+        <img src="profile-art/lildude.png" alt="Small character drawing">
+        <a class="about-link" href="#page-2"></a>
+      </section>
+
+      <section id="what-i-do">
+        <h1>What I Do</h1>
+        <img src="profile-art/coffee.png" alt="Drawing of a purple mug">
+        <a class="what-i-do-link" href="#page-3"></a>
+      </section>
+    </section>
+
+    <section id="page-2">
+      <section id="left">
+        <h1>About Me</h1>
+        <ul>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </ul>
+      </section>
+
+      <section class="slideshow" id="right">
+        <div id="slideshow"></div>
+        <div class="p2-social">
+          <a href="https://github.com/CTWaldock" class="fab fa-github-alt" target="_blank"></a>
+          <a href="https://twitter.com/c_waldock" class="fab fa-twitter" target="_blank"></a>
+          <a href="https://www.facebook.com/profile.php?id=100008495649800" class="fab fa-facebook-f" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/clayton-waldock-09641115a/" class="fab fa-linkedin-in" target="_blank"></a>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-3">
+      <section>
+        <div class="bubble-left">
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="bubble-right">
+          <h1>What I do</h1>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor</p>
+        </div>
+      </section>
+
+    </section>
+  </body>
+</html>
