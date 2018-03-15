@@ -121,7 +121,7 @@ img {
 }
 
 #left {
-  background-color: grey;
+  background-color: #cccccc;
   height: 100vh;
   width: 60vw;
 }
@@ -159,7 +159,7 @@ img {
 }
 
 .p2-social {
-  background-color: orange;
+  background-color: #9d5980;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -187,18 +187,33 @@ div.p2-social a:hover {
   font-family: 'Indie Flower', cursive;
 }
 
-.bubble-left {
-  background-color: red;
+.bubble-right {
+  background-color: #9d5980;
   width: 60vw;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.bubble-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #aaaaaa;
+  width: 40vw;
   height: 100vh;
   margin: 0 auto;
 }
 
-.bubble-right {
-  background-color: aqua;
-  width: 40vw;
-  height: 100vh;
-  margin: 0 auto;
+.project-1 {
+  background-color: #aaaaaa;
+}
+
+.project-2 {
+  background-color: #bbbbbb;
+}
+
+.project-3 {
+  background-color: #cccccc;
 }
 
 div.bubble-right h1 {
