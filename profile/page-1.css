@@ -1,0 +1,136 @@
+body {
+  background-color: #dddddd;
+}
+
+.page-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: auto;
+  height: 25vh;
+}
+
+#info {
+  display: grid;
+  grid-template-rows: 80% 20%;
+  background-color: #cccccc;
+  margin: 0 auto;
+  width: 50vw;
+  height: 50vh;
+}
+
+.info-text {
+  text-align: center;
+  font-size: 1em;
+}
+
+.info-social {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 2vh;
+}
+
+#info-social {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  transition: 1.2s;
+}
+
+#info-social:hover {
+  opacity: 0.2;
+}
+
+#logo-page {
+  display: flex;
+  background-color: #9d5980;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+}
+
+#about-me {
+  display: flex;
+  background-color: #bbbbbb;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  transition: 1.2s;
+}
+
+#about-me:hover {
+  opacity: 0.2;
+}
+
+.about-link {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    top: 50%;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#what-i-do {
+  display: flex;
+  background-color: #aaaaaa;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  transition: 1.2s;
+}
+
+#what-i-do:hover {
+  opacity: 0.2;
+}
+
+.what-i-do-link {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    top: 50%;
+    right: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+@media screen and (max-width: 600px) {
+  #info-social {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  img {
+    width: auto;
+    height: 12vh;
+  }
+
+  .info-text {
+    padding-left: 1em;
+    font-size: 1em;
+  }
+}

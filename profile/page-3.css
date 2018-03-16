@@ -1,0 +1,78 @@
+#page-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  font-family: 'Indie Flower', cursive;
+}
+
+.bubble-right {
+  background-color: #9d5980;
+  width: 60vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bubble-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #aaaaaa;
+  width: 40vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.project-1 {
+  background-color: #aaaaaa;
+}
+
+/* #project-1-link {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);
+} */
+
+.project-2 {
+  background-color: #bbbbbb;
+}
+
+/* #project-2-link {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);
+} */
+
+.project-3 {
+  background-color: #cccccc;
+}
+
+/* #project-3-link {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);
+} */
+
+div.bubble-right h1 {
+  margin: 0 auto;
+}
