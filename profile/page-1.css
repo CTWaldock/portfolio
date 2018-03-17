@@ -117,10 +117,3 @@ img {
     opacity: 0;
     filter: alpha(opacity=0);
 }
-
-@media screen and (max-width: 600px) {
-  img {
-    width: auto;
-    height: 12vh;
-  }
-}
