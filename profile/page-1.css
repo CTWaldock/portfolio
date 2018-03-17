@@ -118,22 +118,9 @@ img {
     filter: alpha(opacity=0);
 }
 
-@media screen and (max-width: 400px) {
-  #info-social {
-    font-size: 1rem;
-    margin-right: 1rem;
-  }
-
+@media screen and (max-width: 600px) {
   img {
     width: auto;
     height: 12vh;
-  }
-
-  .info-text {
-    font-size: 2em;
-  }
-
-  h1 {
-    font-size: 3em;
   }
 }
