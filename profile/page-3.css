@@ -1,78 +1,86 @@
 #page-3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 33vw 33vw 34vw;
+  grid-template-rows: 40vh 60vh;
   margin: 0 auto;
   font-family: 'Indie Flower', cursive;
 }
 
-.bubble-right {
-  background-color: #9d5980;
-  width: 60vw;
-  height: 100vh;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.bubble-left {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+#project-1 {
   background-color: #aaaaaa;
-  width: 40vw;
-  height: 100vh;
-  margin: 0 auto;
+  transition: 1s;
 }
 
-.project-1 {
-  background-color: #aaaaaa;
-}
-
-/* #project-1-link {
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    bottom: 0;
-    left: 0;
-    text-decoration: none;
-    z-index: 10;
-    background-color: white;
-    opacity: 0;
-    filter: alpha(opacity=0);
-} */
-
-.project-2 {
+#project-2 {
   background-color: #bbbbbb;
+  transition: 1s;
 }
 
-/* #project-2-link {
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    bottom: 0;
-    left: 0;
-    text-decoration: none;
-    z-index: 10;
-    background-color: white;
-    opacity: 0;
-    filter: alpha(opacity=0);
-} */
-
-.project-3 {
+#project-3 {
   background-color: #cccccc;
+  transition: 1s;
 }
 
-/* #project-3-link {
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    bottom: 0;
-    left: 0;
-    text-decoration: none;
-    z-index: 10;
-    background-color: white;
-    opacity: 0;
-    filter: alpha(opacity=0);
-} */
+#project-info {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 3;
+  background-color: #9d5980;
+  z-index: 1;
+}
 
-div.bubble-right h1 {
+#info-1 {
+  position: absolute;
+  background-color: red;
+  z-index: 2;
+  width: 100vw;
+  height: 60vh;
   margin: 0 auto;
+  opacity: 0;
+  transition: 1s;
+}
+
+#info-2 {
+  position: absolute;
+  background-color: blue;
+  z-index: 3;
+  width: 100vw;
+  height: 60vh;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 1s;
+}
+
+#info-3 {
+  position: absolute;
+  background-color: yellow;
+  z-index: 4;
+  width: 100vw;
+  height: 60vh;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 1s;
+}
+
+#project-1:hover {
+  opacity: 0.2;
+}
+
+#project-2:hover {
+  opacity: 0.2;
+}
+
+#project-3:hover {
+  opacity: 0.2;
+}
+
+#project-1:hover~#project-info>#info-1 {
+  opacity: 1;
+}
+
+#project-2:hover~#project-info>#info-2 {
+  opacity: 1;
+}
+
+#project-3:hover~#project-info>#info-3 {
+  opacity: 1;
 }

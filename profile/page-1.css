@@ -1,5 +1,5 @@
 body {
-  background-color: #dddddd;
+  background-color: #cccccc;
 }
 
 .page-1 {
@@ -118,7 +118,7 @@ img {
     filter: alpha(opacity=0);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   #info-social {
     font-size: 1rem;
     margin-right: 1rem;
@@ -130,7 +130,10 @@ img {
   }
 
   .info-text {
-    padding-left: 1em;
-    font-size: 1em;
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 3em;
   }
 }
