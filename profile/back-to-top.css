@@ -1,0 +1,21 @@
+#back-to-top {
+  font-size: 3em;
+  text-decoration: none;
+  color: black;
+  transition: 0.8s;
+  z-index: 10;
+  position: fixed;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+.top-flex {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+#back-to-top:hover {
+  opacity: 1;
+}
