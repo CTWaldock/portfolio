@@ -35,10 +35,10 @@
      set background images as `url(/path/to/image)` here,
      separated by commas
   */
-  background-image: url('/profile-art/me.jpg'),
-    url('/profile-art/me.jpg'),
-    url('/profile-art/me.jpg'),
-    url('/profile-art/me.jpg');
+  background-image: url('profile-art/me.jpg'),
+    url('../profile-art/me.jpg'),
+    url('../profile-art/me.jpg'),
+    url('../profile-art/me.jpg');
   background-size: cover;
   background-position: center;
 }

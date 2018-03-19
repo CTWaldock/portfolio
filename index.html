@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Clayton Waldock</title>
     <link rel="stylesheet" href="profile/page-1.css">
     <link rel="stylesheet" href="profile/page-2.css">
@@ -10,71 +11,21 @@
     <link rel="stylesheet" href="profile/media.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-</script>
-    <script>
-    $(function() {
-  // set `$.fx.interval` at `0`
-  $.fx.interval = 0;
-  (function cycleBgImage(elem, bgimg) {
-// `elem`:`#slideshow`
-// set, reset, delay to `1000` after background image reset
-elem.css("backgroundImage", bgimg)
-  // fade in background image
-  .fadeTo(3000, 1, "linear", function() {
-    // set `delay` before fadeing out image
-    // fade in background image
-    $(this).delay(3000, "fx").fadeTo(3000, 0, "linear", function() {
-      // split background image string at comma , creating array
-      var img = $(this).css("backgroundImage").split(","),
-        // concat first background image to `img` array,
-        // remove first background image from `img` array
-        bgimg = img.concat(img[0]).splice(1).join(",");
-      // recursively call `cycleBgImage`
-      cycleBgImage(elem, bgimg);
-    });
-  });
-  }($("#slideshow")));
-});
-</script>
-
-    <script>
-    $(function() {
-  // set `$.fx.interval` at `0`
-  $.fx.interval = 0;
-  (function cycleBgImage(elem, bgimg) {
-// `elem`:`#slideshow`
-// set, reset, delay to `1000` after background image reset
-elem.css("backgroundImage", bgimg)
-  // fade in background image
-  .fadeTo(3000, 1, "linear", function() {
-    // set `delay` before fadeing out image
-    // fade in background image
-    $(this).delay(3000, "fx").fadeTo(3000, 0, "linear", function() {
-      // split background image string at comma , creating array
-      var img = $(this).css("backgroundImage").split(","),
-        // concat first background image to `img` array,
-        // remove first background image from `img` array
-        bgimg = img.concat(img[0]).splice(1).join(",");
-      // recursively call `cycleBgImage`
-      cycleBgImage(elem, bgimg);
-    });
-  });
-}($("#slideshow2")));
-});
-</script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="profile/slideshow.js"></script>
   </head>
   <body>
+    <!-- landing page with buttons to other sections -->
     <section class="page-1">
       <section id="info">
         <div class="info-text">
          <h1>Clayton Waldock</h1>
          <p>Student Full Stack Developer</p>
          <p>Knowledge In Ruby, html and css</p>
-         <p>Lorem ipsum dolor</p>
-         <p>Lorem ipsum dolor</p>
+         <p>Studying at Coder Academy Brisbane</p>
+         <p>Information security / Web and Mobile Development / Augmented / Virtual Reality</p>
         </div>
+        <!-- buttons social media buttons -->
         <div class="info-social">
           <a id="info-social" href="https://github.com/CTWaldock" class="fab fa-github-alt" target="_blank"></a>
           <a id="info-social" href="https://twitter.com/c_waldock" class="fab fa-twitter" target="_blank"></a>
@@ -83,17 +34,20 @@ elem.css("backgroundImage", bgimg)
         </div>
       </section>
 
+      <!-- logo div -->
       <section id="logo-page">
         <img src="profile-art/brick.png" alt="My logo">
         <h1>Building Websites Better</h1>
       </section>
 
+      <!-- about me button -->
       <section id="about-me">
         <h1>About Me</h1>
         <img src="profile-art/lildude.png" alt="Small character drawing">
         <a class="about-link" href="#page-2"></a>
       </section>
 
+      <!-- what i do button -->
       <section id="what-i-do">
         <h1>What I Do</h1>
         <img src="profile-art/coffee.png" alt="Drawing of a purple mug">
@@ -101,17 +55,23 @@ elem.css("backgroundImage", bgimg)
       </section>
     </section>
 
+    <!-- second section of page, about me section and photo reel -->
     <section id="page-2">
       <section id="left">
         <h1>About Me</h1>
-          <p>I am currently a student at Coder Academy in Brisbane, we are in the process of learning ruby, rails, css, html, as well as the JavaScript stack. Once graduated I will be an efficiant and critically thinking junior web developer.</p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <p>I am an aspiaring full stack developer studying at Coder Academy in Brisbane, I currently have experience in html, css, ruby and rails. By the end of my 25 week coding bootcamp I will be trained as a full stack developer and will be comfortable in the creation of responsive and dynamic websites and applications. Technology has always facinated me and having the chance to develop intuitive ways for people to interact with these technologies truly exites me.</p>
+        <h1>Web and Mobile Development</h1>
+        <p>My first experience with the world of tech was when </p>
+        <h1>Automation</h1>
+        <p>The first type of programming i learned was in the field of automation, programming plc's and electical equipment will always be a passion and interest of mine.</p>
+        <h1>Augmented/Virtual Reality</h1>
+        <p>The future of portable iteractive technology lies in the development of augmented and virtual reality.</p>
       </section>
 
+      <!-- photo reel for about me using jQuery script -->
       <section class="slideshow" id="right">
         <div id="slideshow"></div>
+        <!-- second social media links -->
         <div class="p2-social">
           <a href="https://github.com/CTWaldock" class="fab fa-github-alt" target="_blank"></a>
           <a href="https://twitter.com/c_waldock" class="fab fa-twitter" target="_blank"></a>
@@ -121,6 +81,8 @@ elem.css("backgroundImage", bgimg)
       </section>
     </section>
 
+    <!-- third section of page -->
+    <!-- hover buttons for projects -->
     <section id="page-3">
         <div id="project-1">
           <h1>Project 1</h1>
@@ -131,6 +93,8 @@ elem.css("backgroundImage", bgimg)
         <div id="project-3">
           <h1>Project 3</h1>
         </div>
+
+        <!-- info and photo reel for projects -->
         <div id="project-info">
           <div id="info-1">
             <section class="info-grid" class="slideshow">
@@ -147,24 +111,24 @@ elem.css("backgroundImage", bgimg)
           <div id="info-2">
             <section class="info-grid" class="slideshow">
               <div>
-                <h1>Quick Quote</h1>
-                <h2>Ruby Terminal App</h2>
+                <h1>Placeholder</h1>
+                <h2>lorem ipusm</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
               </div>
               <div>
-                <div id="slideshow2"></div>
+                <div id="slideshow3"></div>
               </div>
             </section>
           </div>
           <div id="info-3">
             <section class="info-grid" class="slideshow">
               <div>
-                <h1>Quick Quote</h1>
-                <h2>Ruby Terminal App</h2>
+                <h1>Placeholder</h1>
+                <h2>lorem ipusm</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
               </div>
               <div>
-                <div id="slideshow2"></div>
+                <div id="slideshow4"></div>
               </div>
             </section>
           </div>
