@@ -9,6 +9,7 @@
   background-color: #cccccc;
   height: 100vh;
   width: 60vw;
+  overflow: scroll;
 }
 
 #right {
@@ -58,7 +59,7 @@ div.p2-social a {
   font-size: 3em;
   text-decoration: none;
   color: black;
-  transition: 1.2s;
+  transition: 0.8s;
 }
 
 div.p2-social a:hover {

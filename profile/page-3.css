@@ -8,17 +8,17 @@
 
 #project-1 {
   background-color: #aaaaaa;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 #project-2 {
   background-color: #bbbbbb;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 #project-3 {
   background-color: #cccccc;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 #project-info {
@@ -36,7 +36,8 @@
   height: 60vh;
   margin: 0 auto;
   opacity: 0;
-  transition: 1s;
+  transition: 0.8s;
+  overflow: scroll;
 }
 
 #info-2 {
@@ -47,7 +48,8 @@
   height: 60vh;
   margin: 0 auto;
   opacity: 0;
-  transition: 1s;
+  transition: 0.8s;
+  overflow: scroll;
 }
 
 #info-3 {
@@ -58,7 +60,8 @@
   height: 60vh;
   margin: 0 auto;
   opacity: 0;
-  transition: 1s;
+  transition: 0.8s;
+  overflow: scroll;
 }
 
 #project-1:hover {
