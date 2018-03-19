@@ -7,18 +7,27 @@
 }
 
 #project-1 {
+  display: flex;
   background-color: #aaaaaa;
   transition: 0.8s;
+  align-items: center;
+  justify-content: center;
 }
 
 #project-2 {
+  display: flex;
   background-color: #bbbbbb;
   transition: 0.8s;
+  align-items: center;
+  justify-content: center;
 }
 
 #project-3 {
+  display: flex;
   background-color: #cccccc;
   transition: 0.8s;
+  align-items: center;
+  justify-content: center;
 }
 
 #project-info {
@@ -38,6 +47,7 @@
   opacity: 0;
   transition: 0.8s;
   overflow: scroll;
+  text-align: center;
 }
 
 #info-2 {
@@ -50,6 +60,7 @@
   opacity: 0;
   transition: 0.8s;
   overflow: scroll;
+  text-align: center;
 }
 
 #info-3 {
@@ -62,6 +73,7 @@
   opacity: 0;
   transition: 0.8s;
   overflow: scroll;
+  text-align: center;
 }
 
 #project-1:hover {
