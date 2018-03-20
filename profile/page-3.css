@@ -1,37 +1,68 @@
 #page-3 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 33vw 33vw 34vw;
-  grid-template-rows: 40vh 60vh;
+  -ms-grid-columns: 33vw 33vw 34vw;
+      grid-template-columns: 33vw 33vw 34vw;
+  -ms-grid-rows: 40vh 60vh;
+      grid-template-rows: 40vh 60vh;
   margin: 0 auto;
   font-family: 'Indie Flower', cursive;
 }
 
 #project-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #aaaaaa;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #project-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #bbbbbb;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #project-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #cccccc;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #project-info {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   grid-row: 2 / span 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
   background-color: #9d5980;
   z-index: 1;
@@ -45,6 +76,8 @@
   height: 60vh;
   margin: 0 auto;
   opacity: 0;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
   overflow: scroll;
   text-align: center;
@@ -58,6 +91,8 @@
   height: 60vh;
   margin: 0 auto;
   opacity: 0;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
   overflow: scroll;
   text-align: center;
@@ -71,6 +106,8 @@
   height: 60vh;
   margin: 0 auto;
   opacity: 0;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
   overflow: scroll;
   text-align: center;
